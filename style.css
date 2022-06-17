@@ -1,0 +1,51 @@
+html{ scroll-behavior: smooth; }
+
+body {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: 'Abel';
+    background-color: #A6A2A2;   
+}
+/* navigation bar*/
+.nav{
+    background-color: #CFD2CD;
+    width: 100%;
+    height: 5vw;
+    position: fixed;
+    /*transform: translateX(-100vw);*/
+    z-index: 1;
+    text-align: center;
+}
+
+/* about me */
+.about{
+    background-color: #5c5c5c;
+    padding-top: 5vw;
+    width: 100%;
+    height: 27vw;
+    text-align: center;
+}
+
+/* projects*/
+.project{
+    width: 100%;
+    height: 20vw;
+    text-align: center;   
+}
+
+/* contact me*/
+.contact{
+    text-align: center;
+}
+
+.form{
+    background-color: #CFD2CD;
+    height: 42vw;
+    width: 40vw;
+    margin: auto;
+    margin-top: 10vw;
+    box-shadow: 5px 10px gray;
+    padding-top: .25vw;
+    text-align: center;
+}
