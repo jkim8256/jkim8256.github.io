@@ -7,45 +7,103 @@ body {
     font-family: 'Abel';
     background-color: #A6A2A2;   
 }
+
+a {
+    text-decoration: none !important;
+  }
+
 /* navigation bar*/
 .nav{
     background-color: #CFD2CD;
     width: 100%;
-    height: 5vw;
+    height: 6vw;
     position: fixed;
-    /*transform: translateX(-100vw);*/
     z-index: 1;
     text-align: center;
+    font-size: 3vw;
+    color: #fff;
+    line-height: 5vw;   
+    transition:.4s linear;
 }
 
 /* about me */
 .about{
     background-color: #5c5c5c;
-    padding-top: 5vw;
+    padding-top: 6vw;
     width: 100%;
-    height: 27vw;
+    height: 30vw;
     text-align: center;
+    transition:.4s linear;
 }
+
+#h1 {
+    font-size: 5vw;
+}
+
+#h2 {
+    font-size: 1vw;
+}
+#p{
+    font-size: 2vw;
+}
+
+#home{
+    text-align: center;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    color: black;
+    font-size: 3vw;
+}
+
+#under{
+    text-align: center;
+    padding-right: 3vw;
+    padding-left: 4vw;
+    color: black;
+    font-size: 1vw;
+}
+
+
+
+#github{
+    text-align: center;
+    padding-right: 5vw;
+    color: black;
+    font-size: 5vw;
+}
+
+#linkedin{
+    text-align: center;
+    padding-left: 5vw;
+    color: navy;
+    font-size: 5vw;
+}
+
+#email{
+    text-align: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    color: beige;
+    font-size: 5vw;
+}
+
 
 /* projects*/
 .project{
     width: 100%;
-    height: 20vw;
-    text-align: center;   
+    height: 30vw;
+    text-align: center;
+    padding-top: 4vw;
+    padding-bottom: 4vw;   
+    transition:.4s linear;
 }
 
 /* contact me*/
 .contact{
+    background-color: #5c5c5c;
     text-align: center;
-}
-
-.form{
-    background-color: #CFD2CD;
-    height: 42vw;
-    width: 40vw;
-    margin: auto;
-    margin-top: 10vw;
-    box-shadow: 5px 10px gray;
-    padding-top: .25vw;
-    text-align: center;
+    width: 100%;
+    height: 10vw;
+    padding-top: 4vw;
+    transition: .4s linear;
 }

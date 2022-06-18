@@ -10,6 +10,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="style.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet'>
 	</head>
 	<body>
 
@@ -18,35 +20,65 @@
 
 				<!-- Navigation bar -->
 					<div class="nav">
-						<a href="#" class="icon solid fa-home"><span>About Me</span></a>
-						<a href="#project" class="icon solid fa-folder"><span>My Projects</span></a>
-						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-						<a href="https://github.com/jkim8256" class="icon brands fa-github"><span>Github</span></a>
+						<a href="#" id = "home">
+							<i class="fa fa-home fa-4x" id = "home"></i>
+							<!--About Me-->
+						</a>
+						<a href="#preject" id = "home">
+							<i class="fa fa-folder fa-4x" id = "home"></i>
+							<!--My Projects-->
+						</a>
+						<a href="#contact" id = "home">
+							<i class="fa fa-envelope fa-4x" id = "home"></i>
+							<!--Contact Me--> 
+						</a>
+						<!--<div>
+							<span id = "under">About Me</span>
+							<span id = "under">My Projects</span>
+							<span id = "under">Contact Me</span>
+						</div>
+					-->
 					</div>
 
-				<!-- about me-->
+					<!-- about me-->
 					<div class = about>
-						<h1>Jason Kim</h1>
-						<p>Undergraduate Student at University of Maryland, College Park</p>
-						<a href="#project" class="jumplink pic">
-							<span class="arrow icon solid fa-chevron-right"><span>See my projects</span></span>
-							<img src="images/me.jpg" alt="" />
+						<h1 id = "h1">Jason Kim</h1>
+						<p id="p">Undergraduate Student at University of Maryland, College Park</p>
+						<p id="p">Majoring in Computer Science</p>
+						<a href="https://github.com/jkim8256"> 
+							<i class="fa fa-github fa-4x" id = "github"></i>
+						</a>
+						<a href='mailto:jjkim8256@gmail.com'>
+							<i class="fa fa-envelope fa-4x" id = "email"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/jason-kim-a3a8901b5">
+							<i class="fa fa-linkedin fa-4x" id = "linkedin"></i>
 						</a>
 					</div>
-
-					<div class ="project" id = "project">
-						<h2>My Projects</h2>
-						<h3>
+				
+					<div class ="project">
+						<h1 id="h1" >My Projects</h1>
+						<h2 id = "p">
 							Discord Game Bot
-						</h3>
-						<a href="https://github.com/jkim8256/Discord-Liar-Game-Bot"> Discord game bot</a>
+						</h2>
+						<a href="https://github.com/jkim8256/Discord-Liar-Game-Bot" id = "h2"> Discord game bot</a>
+						<h2 id = "p">
+							Music Popularity Prediction
+						</h2>
+						<a href="https://github.com/jkim8256/Music-Popularity-Prediction" id = "h2"> Music Popularity Prediction</a>
 					</div>
 				
 				<!-- contact me-->
 					<div class = "contact" id = "contact">
-							<form action="mailto:jjkim8256@gmail.com">
-								<input type="submit" value="Contact Me!" id="input-submit">
-							</form>
+						<a href="https://github.com/jkim8256"> 
+							<i class="fa fa-github fa-4x" id = "github"></i>
+						</a>
+						<a href='mailto:jjkim8256@gmail.com'>
+							<i class="fa fa-envelope fa-4x" id = "email"></i>
+						</a>
+						<a href="https://www.linkedin.com/in/jason-kim-a3a8901b5">
+							<i class="fa fa-linkedin fa-4x" id = "linkedin"></i>
+						</a>
 					</div>
 
 			</div>
