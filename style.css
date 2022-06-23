@@ -85,17 +85,6 @@ details > summary {
     background: #5c5c5c;
 }
 
-#under{
-    transform: translateY(-3svw);
-    text-align: center;
-    padding-right: 3vw;
-    padding-left: 4vw;
-    color: black;
-    font-size: 1vw;
-}
-
-
-
 #github{
     text-align: center;
     padding-right: 5vw;
@@ -137,4 +126,19 @@ details > summary {
     height: 10vw;
     padding-top: 4vw;
     transition: .4s linear;
+}
+
+#linkedin:hover{
+    transform: scale(1.25);
+    transition: .4s ease-in-out;
+}
+
+#github:hover{
+    transform: scale(1.25);
+    transition: .4s ease-in-out; 
+}
+
+#email:hover{
+    transform: scale(1.4); 
+    transition: .4s ease-in-out;
 }
