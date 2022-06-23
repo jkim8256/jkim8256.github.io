@@ -12,17 +12,19 @@ a {
     text-decoration: none !important;
   }
 
+details > summary {
+    list-style: none;
+}
+
 /* navigation bar*/
 .nav{
     background-color: #CFD2CD;
     width: 100%;
-    height: 6vw;
+    height: 6.3vw;
     position: fixed;
     z-index: 1;
     text-align: center;
     font-size: 3vw;
-    color: #fff;
-    line-height: 5vw;   
     transition:.4s linear;
 }
 
@@ -31,7 +33,7 @@ a {
     background-color: #5c5c5c;
     padding-top: 6vw;
     width: 100%;
-    height: 30vw;
+    height: 40vw;
     text-align: center;
     transition:.4s linear;
 }
@@ -52,10 +54,39 @@ a {
     padding-right: 2vw;
     padding-left: 2vw;
     color: black;
-    font-size: 3vw;
+    font-size: 5vw;
+}
+
+#home:hover{
+    background: #5c5c5c;
+}
+
+#my-projects{
+    text-align: center;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    color: black;
+    font-size: 5vw;
+}
+
+#my-projects:hover{
+    background: #A6A2A2;
+}
+
+#contact-me{
+    text-align: center;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    color: black;
+    font-size: 5vw;
+}
+
+#contact-me:hover{
+    background: #5c5c5c;
 }
 
 #under{
+    transform: translateY(-3svw);
     text-align: center;
     padding-right: 3vw;
     padding-left: 4vw;
@@ -107,34 +138,3 @@ a {
     padding-top: 4vw;
     transition: .4s linear;
 }
-
-.dropbtn {
-    background-color: #3498DB;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-  }
-
-/* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-  }
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.show {display:block;}
