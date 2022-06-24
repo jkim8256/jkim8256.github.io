@@ -5,7 +5,9 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Abel';
-    background-color: #A6A2A2;   
+    background-color: black; 
+    color: white;  
+    font-family: 'Oxygen Mono', monospace, Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -16,26 +18,71 @@ details > summary {
     list-style: none;
 }
 
+
 /* navigation bar*/
 .nav{
-    background-color: #CFD2CD;
+   background: black;
     width: 100%;
-    height: 6.3vw;
+    height: 3vw;
     position: fixed;
     z-index: 1;
-    text-align: center;
-    font-size: 3vw;
+    text-align: left;
+    font-size: 2vw;
+    padding-top: 1vw;
     transition:.4s linear;
+    border: solid white;
+    border-width: 0.0vw 0px;
+    box-shadow: 
+            0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 0.2rem #eff302,
+            0 0 0.8rem #eff302,
+            0 0 0.8rem #b5e72b,
+            inset 0 0 0.3rem #b048e0; 
+            
 }
 
 /* about me */
 .about{
-    background-color: #5c5c5c;
+    color: white;
+    background: black;
     padding-top: 6vw;
     width: 100%;
     height: 40vw;
     text-align: center;
     transition:.4s linear;
+}
+
+#neon{
+    text-shadow:
+      0 0 42px rgb(74, 40, 224),
+      0 0 82px rgb(74, 40, 224),
+      0 0 92px rgb(74, 40, 224),
+      0 0 102px rgb(74, 40, 224),
+      0 0 151px rgb(74, 40, 224);
+    border:solid white;
+    border-width: 0.3vw 0px;
+    
+    box-shadow: 
+            0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 0.4rem #bc13fe,
+            0 0 0.8rem #bc13fe,
+            0 0 2rem #bc13fe,
+            inset 0 0 0.3rem #bc13fe; 
+}
+
+#neon1{
+  border:solid white;
+  border-width: 0.3vw 0px;
+  
+  box-shadow: 
+          0 0 .2rem #fff,
+          0 0 .2rem #fff,
+          0 0 0.2rem rgb(40, 224, 209),
+          0 0 0.8rem rgb(40, 224, 209),
+          0 0 0.8rem rgb(37, 86, 190),
+          inset 0 0 0.3rem rgb(108, 112, 179); 
 }
 
 #h1 {
@@ -53,49 +100,64 @@ details > summary {
     text-align: center;
     padding-right: 2vw;
     padding-left: 2vw;
-    color: black;
-    font-size: 5vw;
+    color: white;
 }
 
 #home:hover{
-    background: #5c5c5c;
+  box-shadow: 
+  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 0.4rem #bb5de0,
+  0 0 0.8rem #c162e7,
+  0 0 2rem #c061e6,
+  inset 0 0 0.3rem #c07bdb; 
 }
 
 #my-projects{
     text-align: center;
     padding-right: 2vw;
     padding-left: 2vw;
-    color: black;
-    font-size: 5vw;
+    color: white;
 }
 
 #my-projects:hover{
-    background: #A6A2A2;
+  box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 0.4rem #40c4e6,
+        0 0 0.8rem #2b90be,
+        0 0 2rem #209920,
+        inset 0 0 0.3rem #0db95b; 
 }
 
 #contact-me{
     text-align: center;
     padding-right: 2vw;
     padding-left: 2vw;
-    color: black;
-    font-size: 5vw;
+    color: white;
 }
 
 #contact-me:hover{
-    background: #5c5c5c;
+  box-shadow: 
+  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 0.4rem skyblue,
+  0 0 0.8rem skyblue,
+  0 0 2rem skyblue,
+  inset 0 0 0.3rem skyblue; 
 }
 
 #github{
     text-align: center;
     padding-right: 5vw;
-    color: black;
+    color:gray;
     font-size: 5vw;
 }
 
 #linkedin{
     text-align: center;
     padding-left: 5vw;
-    color: navy;
+    color: skyblue;
     font-size: 5vw;
 }
 
@@ -120,7 +182,6 @@ details > summary {
 
 /* contact me*/
 .contact{
-    background-color: #5c5c5c;
     text-align: center;
     width: 100%;
     height: 10vw;

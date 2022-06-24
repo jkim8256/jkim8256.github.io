@@ -1,0 +1,17 @@
+				<!-- Navigation bar -->
+				<div id = neon1>
+					<div class="nav">
+						<a href="#" id = home>
+							<!--<i class="fa fa-home" id = "home" class="hover"></i>-->
+							About Me
+						</a>
+						<a href="#project" id = "my-projects">
+							<!--<i class="fa fa-folder" id = "my-projects"></i>-->
+							My Projects
+						</a>
+						<a href="#contact" id = "contact-me">
+							<!--<i class="fa fa-envelope" id = "contact-me"></i>--> 
+							Contact Me
+						</a>
+					</div>
+				</div>
