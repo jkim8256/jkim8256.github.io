@@ -101,6 +101,8 @@ details > summary {
     padding-right: 2vw;
     padding-left: 2vw;
     color: white;
+    padding-top: 1vw;
+    padding-bottom: 0.7vw;
 }
 
 #home:hover{
@@ -111,6 +113,7 @@ details > summary {
   0 0 0.8rem #c162e7,
   0 0 2rem #c061e6,
   inset 0 0 0.3rem #c07bdb; 
+  transition:.4s linear;
 }
 
 #my-projects{
@@ -118,16 +121,19 @@ details > summary {
     padding-right: 2vw;
     padding-left: 2vw;
     color: white;
+    padding-top: 1vw;
+    padding-bottom: 0.7vw;
 }
 
 #my-projects:hover{
   box-shadow: 
         0 0 .2rem #fff,
         0 0 .2rem #fff,
-        0 0 0.4rem #40c4e6,
-        0 0 0.8rem #2b90be,
-        0 0 2rem #209920,
-        inset 0 0 0.3rem #0db95b; 
+        0 0 0.4rem #e6db40,
+        0 0 0.8rem #be832b,
+        0 0 2rem #996920,
+        inset 0 0 0.3rem #d69913; 
+    transition:.4s linear;
 }
 
 #contact-me{
@@ -135,16 +141,19 @@ details > summary {
     padding-right: 2vw;
     padding-left: 2vw;
     color: white;
+    padding-top: 1vw;
+    padding-bottom: 0.7vw;
 }
 
 #contact-me:hover{
   box-shadow: 
   0 0 .2rem #fff,
   0 0 .2rem #fff,
-  0 0 0.4rem skyblue,
-  0 0 0.8rem skyblue,
-  0 0 2rem skyblue,
-  inset 0 0 0.3rem skyblue; 
+  0 0 0.4rem rgb(40, 224, 209),
+  0 0 0.8rem rgb(40, 224, 209),
+  0 0 2rem rgb(37, 86, 190),
+  inset 0 0 0.3rem rgb(62, 153, 123);
+  transition:.4s linear;
 }
 
 #github{
@@ -154,6 +163,19 @@ details > summary {
     font-size: 5vw;
 }
 
+#github_nav{
+    text-align: right;
+    color: gray;
+    float: right;
+    margin-right: 4%;
+    font-size: 2.5vw;
+    margin-top: -0.17%;
+}
+#github_nav:hover{
+    transform: scale(1.25);
+    transition: .4s ease-in-out;
+}
+
 #linkedin{
     text-align: center;
     padding-left: 5vw;
@@ -161,12 +183,35 @@ details > summary {
     font-size: 5vw;
 }
 
+#linkedin_nav{
+    text-align: right;
+    color: skyblue;
+    float: right;
+    margin-right: 4%;
+}
+#linkedin_nav:hover{
+    transform: scale(1.25);
+    transition: .4s ease-in-out;
+}
+
+
 #email{
     text-align: center;
     padding-left: 2vw;
     padding-right: 2vw;
     color: beige;
     font-size: 5vw;
+}
+
+#email_nav{
+    text-align: right;
+    color: beige;
+    float: right;
+    margin-right: 4%;
+}
+#email_nav:hover{
+    transform: scale(1.25);
+    transition: .4s ease-in-out;
 }
 
 
@@ -203,3 +248,55 @@ details > summary {
     transform: scale(1.4); 
     transition: .4s ease-in-out;
 }
+
+.wrap{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: 20vw;
+    grid-gap: 4vw;
+    padding-left: 28%;
+}
+
+.box{
+    background-color: black;
+    color: #fff;
+    border-radius: 1vw;
+    border:solid white;
+    padding: 2vw;
+}
+
+.box:hover{
+    transform: scale(1.15);
+    transition: .2s ease-in-out; 
+    box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+         0 0 0.4rem rgb(200, 65, 218),
+         0 0 0.8rem rgb(95, 40, 224),
+         0 0 2rem rgb(37, 86, 190),
+         inset 0 0 0.3rem rgb(79, 200, 221);
+    animation: flicker 2s alternate;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+  
+        text-shadow:
+        0 0 4px #fff,
+        0 0 3px #fff,
+        0 0 2px #fff,
+        0 0 4px rgb(134, 57, 221),
+        0 0 8px rgb(60, 75, 211),
+        0 0 9px rgb(223, 107, 132),
+        0 0 15px rgb(90, 102, 218),
+        0 0 5px rgb(103, 55, 214);
+    
+    }
+    
+    20%, 24%, 55% {        
+        text-shadow: none;
+    }    
+  }
