@@ -12,6 +12,7 @@ body {
 
 a {
     text-decoration: none !important;
+    color: white;
   }
 
 details > summary {
@@ -218,7 +219,7 @@ details > summary {
 /* projects*/
 .project{
     width: 100%;
-    height: 40vw;
+    height: 60vw;
     text-align: center;
     padding-top: 3vw;
     padding-bottom: 3vw;   
@@ -252,9 +253,9 @@ details > summary {
 .wrap{
     display: grid;
     grid-template-columns: 20vw 20vw 20vw;
-    grid-template-rows: 20vw;
+    grid-template-rows: 20vw 20vw;
     grid-gap: 4vw;
-    padding-left: 28%;
+    padding-left: 15%;
 }
 
 .box{
