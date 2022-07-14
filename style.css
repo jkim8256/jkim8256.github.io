@@ -19,12 +19,23 @@ details > summary {
     list-style: none;
 }
 
+#h1 {
+    font-size: 5vw;
+}
+
+#h2 {
+    font-size: 1vw;
+}
+#p{
+    font-size: 2vw;
+}
+
 
 /* navigation bar*/
 .nav{
    background: black;
     width: 100%;
-    height: 3vw;
+    height: 3.07vw;
     position: fixed;
     z-index: 1;
     text-align: left;
@@ -36,8 +47,8 @@ details > summary {
     box-shadow: 
             0 0 .2rem #fff,
             0 0 .2rem #fff,
-            0 0 0.2rem #eff302,
             0 0 0.8rem #eff302,
+            0 0 1.8rem #eff302,
             0 0 0.8rem #b5e72b,
             inset 0 0 0.3rem #b048e0; 
             
@@ -67,8 +78,8 @@ details > summary {
     box-shadow: 
             0 0 .2rem #fff,
             0 0 .2rem #fff,
-            0 0 0.4rem #bc13fe,
-            0 0 0.8rem #bc13fe,
+            0 0 1.8rem #bc13fe,
+            0 0 1.8rem #bc13fe,
             0 0 2rem #bc13fe,
             inset 0 0 0.3rem #bc13fe; 
 }
@@ -80,21 +91,10 @@ details > summary {
   box-shadow: 
           0 0 .2rem #fff,
           0 0 .2rem #fff,
-          0 0 0.2rem rgb(40, 224, 209),
-          0 0 0.8rem rgb(40, 224, 209),
+          0 0 1.8rem rgb(40, 224, 209),
+          0 0 1.8rem rgb(40, 224, 209),
           0 0 0.8rem rgb(37, 86, 190),
           inset 0 0 0.3rem rgb(108, 112, 179); 
-}
-
-#h1 {
-    font-size: 5vw;
-}
-
-#h2 {
-    font-size: 1vw;
-}
-#p{
-    font-size: 2vw;
 }
 
 #home{
@@ -172,10 +172,6 @@ details > summary {
     font-size: 2.5vw;
     margin-top: -0.17%;
 }
-#github_nav:hover{
-    transform: scale(1.25);
-    transition: .4s ease-in-out;
-}
 
 #linkedin{
     text-align: center;
@@ -190,11 +186,6 @@ details > summary {
     float: right;
     margin-right: 4%;
 }
-#linkedin_nav:hover{
-    transform: scale(1.25);
-    transition: .4s ease-in-out;
-}
-
 
 #email{
     text-align: center;
@@ -209,10 +200,6 @@ details > summary {
     color: beige;
     float: right;
     margin-right: 4%;
-}
-#email_nav:hover{
-    transform: scale(1.25);
-    transition: .4s ease-in-out;
 }
 
 
@@ -235,14 +222,9 @@ details > summary {
     transition: .4s linear;
 }
 
-#linkedin:hover{
+#linkedin:hover, #github:hover, #email_nav:hover, #linkedin_nav:hover, #github_nav:hover{
     transform: scale(1.25);
     transition: .4s ease-in-out;
-}
-
-#github:hover{
-    transform: scale(1.25);
-    transition: .4s ease-in-out; 
 }
 
 #email:hover{
@@ -300,4 +282,42 @@ details > summary {
     20%, 24%, 55% {        
         text-shadow: none;
     }    
+}
+
+#background {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 100;
+  }
+
+.popupclose {
+    color: black;
+    font-size: 2vw;
+    float: right;
+    padding-top: 0.2vw;
+    padding-right: 0.5vw;
+    cursor: pointer;
+  }
+
+.popupcontent {
+    padding: 10px;
+  }
+
+  #popup1, #popup2, #popup3, #popup4, #popup5{
+    color: black;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 60vw;
+    height: 30vw;
+    z-index: 200;
   }
