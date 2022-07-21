@@ -310,14 +310,21 @@ details > summary {
   }
 
   #popup1, #popup2, #popup3, #popup4, #popup5{
-    color: black;
+    color: white;
     display: none;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: black;
     width: 60vw;
     height: 30vw;
     z-index: 200;
+    box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+         0 0 0.4rem rgb(200, 65, 218),
+         0 0 0.8rem rgb(95, 40, 224),
+         0 0 2rem rgb(37, 86, 190),
+         inset 0 0 0.3rem rgb(79, 200, 221);
   }
