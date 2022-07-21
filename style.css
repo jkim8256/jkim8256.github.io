@@ -176,6 +176,7 @@ details > summary {
 #linkedin{
     text-align: center;
     padding-left: 5vw;
+    padding-right: 5vw;
     color: skyblue;
     font-size: 5vw;
 }
@@ -202,6 +203,19 @@ details > summary {
     margin-right: 4%;
 }
 
+#resume{
+    text-align: center;
+    padding-right: 5vw;
+    color: rgb(209, 209, 226);
+    font-size: 5vw;
+}
+
+#resume_nav{
+    text-align: right;
+    color: rgb(209, 209, 226);
+    float: right;
+    margin-right: 4%;
+}
 
 /* projects*/
 .project{
@@ -222,7 +236,7 @@ details > summary {
     transition: .4s linear;
 }
 
-#linkedin:hover, #github:hover, #email_nav:hover, #linkedin_nav:hover, #github_nav:hover{
+#linkedin:hover, #github:hover, #email_nav:hover, #linkedin_nav:hover, #github_nav:hover, #resume:hover, #resume_nav:hover{
     transform: scale(1.25);
     transition: .4s ease-in-out;
 }
@@ -328,3 +342,61 @@ details > summary {
          0 0 2rem rgb(37, 86, 190),
          inset 0 0 0.3rem rgb(79, 200, 221);
   }
+
+/*Div for video and buttons*/
+.popup-left{
+    float: left;
+    height: 100%;
+    width: 50%;
+    text-align: center;
+}
+
+/*Div for description*/
+.popup-right{
+    float: left;
+    height: 100%;
+    width: 50%;
+}
+
+.available, .available1{
+    background-color: black;
+    margin-top: 4vw;
+    color: #fff;
+    font-size:1vw;
+    box-shadow: 
+    0 0 .2rem #fff,
+    0 0 .2rem #fff,
+     0 0 0.4rem rgb(200, 65, 218),
+     0 0 0.8rem rgb(95, 40, 224),
+     0 0 2rem rgb(37, 86, 190),
+     inset 0 0 0.1rem rgb(79, 200, 221);
+}
+
+.available:hover{
+    box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 0.4rem #e6db40,
+        0 0 0.8rem #be832b,
+        0 0 2rem #996920,
+        inset 0 0 0.1rem #d69913; 
+    animation: flicker 2s alternate-reverse;
+    animation-fill-mode: forwards;
+}
+
+.available1:hover{
+    box-shadow: 
+        0 0 .2rem #fff,
+        0 0 .2rem #fff,
+        0 0 0.4rem rgb(40, 224, 209),
+        0 0 0.8rem rgb(40, 224, 209),
+        0 0 2rem rgb(37, 86, 190),
+        inset 0 0 0.3rem rgb(62, 153, 123);
+    animation: flicker 2s alternate-reverse;
+    animation-fill-mode: forwards;
+}
+
+.unavailable{
+    pointer-events: none;
+    font-size:1vw;
+}
