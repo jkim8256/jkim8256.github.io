@@ -65,6 +65,7 @@ details > summary {
     transition:.4s linear;
 }
 
+/*neon text and border for big sections*/
 #neon{
     text-shadow:
       0 0 42px rgb(74, 40, 224),
@@ -84,6 +85,7 @@ details > summary {
             inset 0 0 0.3rem #bc13fe; 
 }
 
+/*neon text and border for big sections*/
 #neon1{
   border:solid white;
   border-width: 0.3vw 0px;
@@ -97,6 +99,7 @@ details > summary {
           inset 0 0 0.3rem rgb(108, 112, 179); 
 }
 
+/*about me section*/
 #home{
     text-align: center;
     padding-right: 2vw;
@@ -117,6 +120,7 @@ details > summary {
   transition:.4s linear;
 }
 
+/*my projects section*/
 #my-projects{
     text-align: center;
     padding-right: 2vw;
@@ -137,6 +141,7 @@ details > summary {
     transition:.4s linear;
 }
 
+/*contact me/get connected section*/
 #contact-me{
     text-align: center;
     padding-right: 2vw;
@@ -157,6 +162,8 @@ details > summary {
   transition:.4s linear;
 }
 
+
+/*logos*/
 #github{
     text-align: center;
     padding-right: 5vw;
@@ -246,6 +253,7 @@ details > summary {
     transition: .4s ease-in-out;
 }
 
+/*project boxes wrapper*/
 .wrap{
     display: grid;
     grid-template-columns: 20vw 20vw 20vw;
@@ -253,7 +261,7 @@ details > summary {
     grid-gap: 4vw;
     padding-left: 15%;
 }
-
+/*box for each project*/
 .box{
     background-color: black;
     color: #fff;
@@ -298,6 +306,7 @@ details > summary {
     }    
 }
 
+/*background upon popup*/
 #background {
     display: none;
     position: fixed;
@@ -310,6 +319,7 @@ details > summary {
     z-index: 100;
   }
 
+  /*closing popup*/
 .popupclose {
     color: black;
     font-size: 2vw;
@@ -343,22 +353,23 @@ details > summary {
          inset 0 0 0.3rem rgb(79, 200, 221);
   }
 
-/*Div for video and buttons*/
-.popup-left{
+/*left side of the popup*/
+.popupLeft{
     float: left;
     height: 100%;
     width: 50%;
     text-align: center;
 }
 
-/*Div for description*/
-.popup-right{
+/*right side of the popup*/
+.popupRight{
     float: left;
     height: 100%;
     width: 50%;
 }
 
-.available, .available1{
+/*buttons for deployed and source code in popup screen*/
+.reroute, .reroute1{
     background-color: black;
     margin-top: 4vw;
     color: #fff;
@@ -372,7 +383,7 @@ details > summary {
      inset 0 0 0.1rem rgb(79, 200, 221);
 }
 
-.available:hover{
+.reroute:hover{
     box-shadow: 
         0 0 .2rem #fff,
         0 0 .2rem #fff,
@@ -384,7 +395,7 @@ details > summary {
     animation-fill-mode: forwards;
 }
 
-.available1:hover{
+.reroute1:hover{
     box-shadow: 
         0 0 .2rem #fff,
         0 0 .2rem #fff,
@@ -394,9 +405,4 @@ details > summary {
         inset 0 0 0.3rem rgb(62, 153, 123);
     animation: flicker 2s alternate-reverse;
     animation-fill-mode: forwards;
-}
-
-.unavailable{
-    pointer-events: none;
-    font-size:1vw;
 }
